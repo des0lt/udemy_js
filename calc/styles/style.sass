@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+    
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+$usual-font: "Kanit", serif
+
+
+body, html 
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: rgb(32, 32, 32)
+
+
+.calc 
+    width: 350px
+    background-color: #626262
+    border-radius: 25px
+    display: flex
+    flex-direction: column
+    padding: 20px
+    gap: 20px
+    &_input 
+        width: 100%
+        height: 70px
+        background-color: rgb(32, 32, 32)
+        border-radius: 13px
+        display: flex
+        align-items: center
+        justify-content: end
+        padding: 10px
+        p
+            color: #fff
+            font-family: $usual-font
+            font-size: 30px
+    &_btns
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: space-evenly
+        gap: 10px
+        flex-wrap: wrap
+        div
+            background-color: white
+            width: 22%
+            height: 70px
+            border-radius: 10px
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            &:nth-child(1)
+                width: 48%
+                background-color: #d3d3d3
+            &:nth-child(2)
+                width: 48%  
+                background-color: #d3d3d3
+            &:last-child
+                background-color: #feb200
+            p
+                font-family: $usual-font
+                font-size: 40px
+                user-select: none
+
+
